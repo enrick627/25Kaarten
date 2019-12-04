@@ -34,7 +34,7 @@ namespace Kaarten
             Console.WriteLine("wat is uw kaartsoort? : ");
             invoer = Console.ReadLine();
 
-            soort = Enum.Parse(soort,invoer);
+            soort =(Soort)Enum.Parse(typeof(Soort),invoer);
 
 
             Console.WriteLine($"de soort van de kaart is {soort.ToString().ToLower()}.");
